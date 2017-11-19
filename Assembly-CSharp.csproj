@@ -52,7 +52,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\DogController.cs" />
-     <None Include="Assets\Kitchen Background\README.txt" />
+     <None Include="Assets\Sprites\Kitchen Background\README.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
