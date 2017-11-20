@@ -51,6 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\DestoryOnContact.cs" />
      <Compile Include="Assets\Scripts\DogController.cs" />
      <None Include="Assets\Sprites\Kitchen Background\README.txt" />
  <Reference Include="UnityEngine.UI">
