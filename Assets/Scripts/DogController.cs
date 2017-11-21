@@ -5,7 +5,7 @@ using UnityEngine;
 public class DogController : MonoBehaviour {
 
     public Camera cam;
-    private float moveIncrement = .000000000000000001f;
+    private float moveIncrement = .0000001f;
     private float maxWidth;
 
 	// Use this for initialization
