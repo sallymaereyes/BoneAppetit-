@@ -8,10 +8,22 @@ public class DogController : MonoBehaviour {
     private float moveIncrement = .0000001f;
     private float maxWidth;
 
+    public Renderer rend;
+
 	// Use this for initialization
 	void Start () {
 		
+        if(cam == null)
+        {
+            cam = Camera.main;
+        }
+        rend = GetComponent<Renderer>();
 
+        Vector3 upperCorner = new Vector3(Screen.width, Screen.height, 0.0f);
+        Vector3 targetWidth = cam.ScreenToWorldPoint(upperCorner);
+        // float dogWidth = renderer.bounds.extents.x;
+        float dogWidth = rend.bounds.extents.x;
+        maxWidth = targetWidth.x - dogWidth;
 	}
 	
 	// Update is called once per frame

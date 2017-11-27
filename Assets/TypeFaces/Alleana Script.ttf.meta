@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 79b316891497c0a479e7268d1684e9de
+timeCreated: 1511657552
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Alleana Script
+  fontNames:
+  - Alleana Script
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
