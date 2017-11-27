@@ -12,6 +12,7 @@ public class GameController : MonoBehaviour {
 
     public GameObject gameOverText;
     public GameObject restartButton;
+    public GameObject creditsButton;
 
     public GameObject startButton;
     public GameObject splashScreen;
@@ -89,6 +90,7 @@ public class GameController : MonoBehaviour {
 
         yield return new WaitForSeconds(1.0f);
         restartButton.SetActive(true);
+        creditsButton.SetActive(true);
     }
 
     
