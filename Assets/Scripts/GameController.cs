@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class GameController : MonoBehaviour {
 
     public Camera cam;
-    public GameObject bone;
+    public GameObject[] items;
     public float timeLeft = 20;
     public Text timerText;
 
@@ -30,7 +30,7 @@ public class GameController : MonoBehaviour {
 
         Vector3 upperCorner = new Vector3(Screen.width, Screen.height, 0.0f);
         Vector3 targetWidth = cam.ScreenToWorldPoint(upperCorner);
-        float boneWidth = bone.GetComponent<Renderer>().bounds.extents.x;
+        float boneWidth = items[0].GetComponent<Renderer>().bounds.extents.x;
         maxWidth = targetWidth.x - boneWidth;
         UpdateText();
     }
@@ -68,8 +68,10 @@ public class GameController : MonoBehaviour {
     IEnumerator Spawn()
     {
         yield return new WaitForSeconds(1.0f);
+        playing = true;
         while (timeLeft > 0)
         {
+            GameObject bone = items[Random.Range(0, items.Length)];
             Vector3 spawnPosition = new Vector3(
                 Random.Range(-maxWidth, maxWidth),
                 transform.position.y,

@@ -8,6 +8,7 @@ public class Score : MonoBehaviour {
 
     public Text scoreText;
     public int boneValue;
+    public int tennisBallValue;
 
     private int score;
 
@@ -22,6 +23,14 @@ public class Score : MonoBehaviour {
     {
         score += boneValue;
         UpdateScore();
+    }
+
+    void OnCollisionEnter2D (Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Tennis Ball")
+        {
+            score -= tennisBallValue * 2;
+        }
     }
 
 	void UpdateScore () {
