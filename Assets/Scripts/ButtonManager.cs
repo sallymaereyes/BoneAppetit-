@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class ButtonManager : MonoBehaviour {
 
-	public void CreditsButton(string newGameLevel)
+	public void LoadANewLevel(string newGameLevel)
     {
         SceneManager.LoadScene(newGameLevel);
     }

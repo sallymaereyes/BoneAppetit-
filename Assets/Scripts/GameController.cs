@@ -16,6 +16,7 @@ public class GameController : MonoBehaviour {
 
     public GameObject startButton;
     public GameObject splashScreen;
+    public GameObject instructionsButton;
 
     private float maxWidth;
     private bool playing;
@@ -57,6 +58,7 @@ public class GameController : MonoBehaviour {
     {
         splashScreen.SetActive(false);
         startButton.SetActive(false);
+        instructionsButton.SetActive(false);
         StartCoroutine(Spawn());
     }
 
