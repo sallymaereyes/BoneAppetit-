@@ -55,7 +55,6 @@
      <Compile Include="Assets\Scripts\DestoryOnContact.cs" />
      <Compile Include="Assets\Scripts\DogController.cs" />
      <Compile Include="Assets\Scripts\GameController.cs" />
-     <Compile Include="Assets\Scripts\InstructionsContoller.cs" />
      <Compile Include="Assets\Scripts\RestartButton.cs" />
      <Compile Include="Assets\Scripts\Score.cs" />
      <Compile Include="Assets\Scripts\SoundController.cs" />
